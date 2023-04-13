@@ -1,8 +1,8 @@
 ---
 title: First Post
 date: 2023-04-13 21:34:03
-categories: "test"
-tags: "test"
+categories: test
+tags: test
 ---
 
 HELLO HELLO
