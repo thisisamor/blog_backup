@@ -2,10 +2,13 @@
 title: First Post
 date: 2023-04-13 21:34:03
 categories: test
-tags: test
+tag: test
 ---
+<p style="opacity: 0.7;">Start Notes: 
 
-HELLO HELLO
+<small style="opacity: 0.7;">HELLO HELLO
+
+Just a brief test on fonts, markdown sytax etc. </small>
 
 ---
 
@@ -13,9 +16,9 @@ HELLO HELLO
 
 我改了字体，所以现在多写一点字，试一试是不是真的改了？
 
-还有标点符号和生僻字：风光旖旎的饕餮大餐。
+还有标点符号和生僻字：“风光旖旎的饕餮大餐。”
 
-（阿漠非常傻地一开始用了 Google font 上的繁体中文字体）
+（非常傻地一开始用了 Google font 上的繁体中文字体）
 
 （为啥手机界面上不显示 Noto Serif 字体啊）
 
@@ -29,9 +32,9 @@ Lo primero que noté es la actitud hacia los maestros. En China, las personas so
 
 ---
 
-#### markdown test: 
+#### Markdown test: 
 
-tables and equations: 
+Tables and equations: 
 
 | Function | Laplace Transform |
 | --- | --- |
@@ -49,7 +52,9 @@ idk how to add mermaid graph.
 
 ---
 
-that's all for now. 
+<p style="opacity: 0.7;">End Notes: </p>
 
-thanks to <i class="fab fa-youtube"></i> [this playlist](https://www.youtube.com/watch?v=q4qtiI2sY8I) i was able to stay awake. 
+<small style="opacity: 0.7;">That's all for now. 
+
+Thanks to <i class="fab fa-youtube"></i> <a href="https://www.youtube.com/watch?v=q4qtiI2sY8I" style="text-decoration: none;">this playlist</a> i was able to stay awake. </small>
 
