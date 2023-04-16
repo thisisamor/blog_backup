@@ -170,6 +170,10 @@ git remote add origin https://github.com/thisisamor/blog_backup
 git push -u origin main
 ```
 
+(The gitignore file in `/themes/next` folder needs to be deleted as well, so that the customised theme could be backed up.)
+
+When restoring the local blog folder, simply clone the whole repo and run `npm install`. Then everything should be back. 
+
 ---
 
 ### Cheat Sheet
