@@ -1,7 +1,7 @@
 ---
 title: First Picture
 date: 2023-04-14 11:12:50
-categories: test
+categories: Test
 tags: test
 ---
 
