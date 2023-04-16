@@ -28,7 +28,7 @@ Just a brief test on fonts, markdown sytax etc. </small>
 
 Algunas de mis prácticas de escritura aleatorias en español: 
 
-Lo primero que noté es la actitud hacia los maestros. En China, las personas son muy educadas con ellos y usan 'por favor' cuando hablan. Casi nunca se dirigen directamente a ellos por su nombre. Sin embargo, aquí en Occidente es común hacerlo, y las relaciones son más cercanas, como de amigos. De hecho, me gusta más esta costumbre occidental, ya que creo que es más fácil para los estudiantes hacer preguntas en este ambiente.
+Lo primero que noté es la actitud hacia los maestros. En China, las personas son muy educadas con ellos y usan 'por favor' cuando hablan. Casi nunca se dirigen directamente a ellos por su nombre. Sin embargo, aquí en Occidente es común hacerlo, y las relaciones son más cercanas, como de amigos. 
 
 ---
 

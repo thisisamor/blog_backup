@@ -156,9 +156,9 @@ Other popular web development languages:
 
 I DON'T THINK THAT I HAVE DONE THIS PROPERLY. 
 
-I firstly tried to commit my local directory to a new branch in the same repo which Hexo was deployed to. I somehow ended up with a new repo under my other account (the one I use for college work). (How could this even happen? I mean I have logged into my account both in vs code and git bash I simply can't see why.) 
+I first tried to commit my local directory to a new branch in the same repo to which Hexo was deployed, but somehow ended up with a new repo under my other account (the one I use for college work). (*How could this even happen? I mean I have logged into my account both in vs code and git bash I simply can't see why*.) 
 
-After initialising the git file I decided that I'm going to do the simpliest thing and just push everything to a new repo, EVERYTHING. This is the part that I believe is not the best solution. However, I thought about this: *if* one day I were to lose my computer, or it broke down, or, I simply wanted to replace it with a new one, with all the softwares and systems that would need to be reinstalled, I'm not going to make it a hard job when comes to restore my blog (*happily found myself an excuse to be stupid*). 
+After initialising the git file I decided that I'm going to do the simpliest thing and just push everything to a new repo. This is the part that I believe is not the best solution. However, I thought about this: *if* one day I were to lose my computer, or it broke down, or, I simply wanted to replace it with a new one, with all the softwares and systems that would need to be reinstalled, I'm not going to make it a hard job when comes to restore my blog (*happily found myself an excuse to be stupid*). 
 
 Anyway, the following are the commands I used to back up. 
 
@@ -170,9 +170,25 @@ git remote add origin https://github.com/thisisamor/blog_backup
 git push -u origin main
 ```
 
-(The gitignore file in `/themes/next` folder needs to be deleted as well, so that the customised theme could be backed up.)
+(The gitignore file in `/themes/next` folder needs to be deleted, so that the customised theme could be backed up.)
 
 When restoring the local blog folder, simply clone the whole repo and run `npm install`. Then everything should be back. 
+
+I tested and it worked. 
+
+---
+
+### Troubleshooting
+
+#### Capitalisation
+
+Changing the category name from `test` to `Test` caused the "404 page not found" error. It is due to the fact that github is not case sensitive, while the URLs in HTTPS are. 
+
+This problem was supposed to be fixed by changing `ignorecase = true` in the config file in `\.deploy_git\.git` into `ignorecase = false`. 
+
+I tried, didn't work for me. 
+
+I removed the files from my posts folder, deployed my blog, then I put them back, deployed again. Issue fixed. 
 
 ---
 
@@ -207,6 +223,8 @@ Some HTML tags I used for styling:
     `<small style="opacity: 0.7;"> Small faded text. </small>`
 - Icon
     `<i class="fa-regular fa-icon"></i>`
+- Hyperlink
+    `<a href="URL" style="text-decoration: none;"> text </a>`
 
 #### Useful Websites
 
