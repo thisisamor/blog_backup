@@ -52,9 +52,9 @@
         <div class="post-meta-container">
           {{ partial('_partials/post/post-meta.njk') }}
 
-          {%- if post.description and (not theme.excerpt_description or not is_index) %}
+          {# {%- if post.description and (not theme.excerpt_description or not is_index) %}
             <div class="post-description">{{ post.description }}</div>
-          {%- endif %}
+          {%- endif %} #}
         </div>
       </header>
     {%- endif %}
@@ -65,7 +65,7 @@
     <div class="post-body{% if post.direction and post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
       {%- if is_index %}
         {%- if post.description and theme.excerpt_description %}
-          <p>{{ post.description }}</p>
+          <p style="opacity: 0.5">{{ post.description }}</p>
           <!--noindex-->
           {%- if theme.read_more_btn %}
             <div class="post-button">

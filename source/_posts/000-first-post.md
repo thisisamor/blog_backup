@@ -3,6 +3,7 @@ title: First Post
 date: 2023-04-13 21:34:03
 categories: Test
 tag: test
+description: Just a brief test on fonts, markdown sytax etc. 
 ---
 <p style="opacity: 0.7;">Start Notes: 
 
@@ -19,8 +20,6 @@ Just a brief test on fonts, markdown sytax etc. </small>
 还有标点符号和生僻字：“风光旖旎的饕餮大餐。”
 
 （非常傻地一开始用了 Google font 上的繁体中文字体）
-
-（为啥手机界面上不显示 Noto Serif 字体啊）
 
 ---
 

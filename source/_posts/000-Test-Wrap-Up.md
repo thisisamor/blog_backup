@@ -5,6 +5,8 @@ categories: Test
 tags: 
     - test 
     - cheat sheet
+description: I think it's a proper time for me to summarise a little. It's always good to write something down... Because my memory is poor. 
+
 ---
 
 <p style="opacity: 0.7;">Start Notes: 
@@ -43,6 +45,8 @@ How Hexo and Jekyll generate websites:
 Apart from the fact that Jekyll has a larger community, they seem pretty similar to me in terms of using their commands (eg: `jekyll build`, `jekyll deploy`, `jekyll-ftp`, etc). 
 
 #### Programming Languages and Frameworks
+
+<small style="opacity: 0.7; font-style: italic">"Hey gpt, what web development languages do hexo and Jekyll use? And also, give me a brief introduction on other popular languages." </small>
 
 Hexo is built with the Node.js runtime environment. 
 
@@ -101,9 +105,9 @@ Other popular web development languages:
     Open `_config.yml` and add the following code to the deploy section at the bottom. 
     ```
     deploy:
-    type: git
-    repo: git@github.com:<username>/<username>.github.io.git   // repo SSH can be copied from github
-    branch: main
+      type: git
+      repo: git@github.com:<username>/<username>.github.io.git   // repo SSH can be copied from github
+      branch: main
     ```
 
 9. Deployment
@@ -129,11 +133,11 @@ Other popular web development languages:
     - menu
         ```
         menu:
-        Posts: /
-        archives: /archives
-        categories: /categories
-        tags: /tags
-        About: /about
+          Home: /
+          archives: /archives
+          categories: /categories
+          tags: /tags
+          About: /about
         ```
     - menu_settings
     - avatar
@@ -142,6 +146,7 @@ Other popular web development languages:
         ```
     - social
     - icon between year and copyright info
+    - excerpt_description and read_more_btn
     - post_meta
     - font (I used [Lora](https://fonts.google.com/specimen/Lora?query=lora) and [Noto Serif SC](https://fonts.google.com/noto/specimen/Noto+Serif+SC?query=noto+serif+sc), serif was the default one)
         ```
@@ -149,8 +154,34 @@ Other popular web development languages:
         ```
     - mermaid
     - math
+
     
-    I also deleted the "set cheers" part in `themes/next/layout/arhive.njk`
+    In `arhive.njk`: Deleted `set cheers` part. 
+
+    In `tags.njk`: Changed `min_font: 16, max_font: 16` (all tags would have the same size). 
+
+    In `tag-cloud.styl`: (all tags would have the same colour.)
+    ```
+    .tag-cloud {
+      text-align: center;
+      a {
+        display: inline-block;
+        margin: 10px;
+        color: #333; /* Set a single color value for all tags */
+      }
+    }
+    if (hexo-config('darkmode')) {
+      @media (prefers-color-scheme: dark) {
+        .tag-cloud a {
+          color: #fff; /* Set a different color for tags in dark mode */
+        }
+      }
+    }
+    ```
+
+    In file `post.njk`
+    - Modified `post-meta-container` (the description would only be shown on home page). 
+    - Changed `<p style="opacity: 0.5">{{ post.description }}</p>` (the description would be faded on home page). 
 
 #### Backup
 
@@ -172,7 +203,7 @@ git push -u origin main
 
 (The gitignore file in `/themes/next` folder needs to be deleted, so that the customised theme could be backed up.)
 
-When restoring the local blog folder, simply clone the whole repo and run `npm install`. Then everything should be back. 
+When restoring the local blog folder, simply clone the whole repo and run `npm install`. Then everything should be back. (If using new computer, regenerate and add new SSH key to github acc, obvi.)
 
 I tested and it worked. 
 
@@ -184,9 +215,9 @@ I tested and it worked.
 
 Changing the category name from `test` to `Test` caused the "404 page not found" error. It is due to the fact that github is not case sensitive, while the URLs in HTTPS are. 
 
-This problem was supposed to be fixed by changing `ignorecase = true` in the config file in `\.deploy_git\.git` into `ignorecase = false`. 
+This problem was supposed to be fixed by changing `ignorecase = true` into `ignorecase = false` in the config file in `\.deploy_git\.git`. 
 
-I tried, didn't work for me. 
+I tried, didn't work. 
 
 I removed the files from my posts folder, deployed my blog, then I put them back, deployed again. Issue fixed. 
 
@@ -216,15 +247,25 @@ I removed the files from my posts folder, deployed my blog, then I put them back
 #### Code
 
 Some HTML tags I used for styling: 
-
+- Read more button
+    `<!-- more -->`
 - Faded
-    `<p style="opacity: 0.7;"> Faded text. </p>`
+    `<p style="opacity: 0.7;"> text </p>`
 - Small faded
-    `<small style="opacity: 0.7;"> Small faded text. </small>`
+    `<small style="opacity: 0.7;"> text </small>`
+- Small italic faded 
+    `<small style="opacity: 0.7; font-style: italic"> text </small>`
 - Icon
     `<i class="fa-regular fa-icon"></i>`
 - Hyperlink
     `<a href="URL" style="text-decoration: none;"> text </a>`
+- Picture size and caption
+    ```
+    <figure>
+      <img src="image source" width="width in px" alt="alt text">
+      <figcaption>This is a caption. </figcaption>
+    </figure>
+    ```
 
 #### Useful Websites
 
