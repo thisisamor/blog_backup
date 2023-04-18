@@ -2,9 +2,10 @@
 title: Software Systems Review
 categories: Study
 tags: 
-    - study
+    - study 
     - software systems
     - review
+description: A review for Software Systems Final Exam. 
 ---
 
 <p style="opacity: 0.7;">Start Notes: 
@@ -15,11 +16,18 @@ tags:
 
 ## Intro
 
+Almost any modern **software system** comprises of: 
+- **Databases**: Where data is stored.
+- **Networks**: How data move around between different computers. 
+- **Applications**: How applications access and utilize networks and databases to implement their functionalities. 
 
+An **Internet exchange point** (IXP) is a physical location through which internet infrastructure companies such as **Internet Service Providers** (ISPs) and **Content distribution networks** (CDNs) connect with each other. 
 
+#### Comment: 
 
+[]
 
-
+---
 
 ## Entity relationship
 

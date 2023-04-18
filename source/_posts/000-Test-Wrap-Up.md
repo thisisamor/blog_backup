@@ -255,6 +255,11 @@ Some HTML tags I used for styling:
     `<small style="opacity: 0.7;"> text </small>`
 - Small italic faded 
     `<small style="opacity: 0.7; font-style: italic"> text </small>`
+- Coloured text
+    `<span style="color:red;"> coloured </span>`
+- Highlighted text
+    `<mark> highlighted </mark>`
+    `<mark style="background-color: #<hex_code>;"> customised highlight </mark>`
 - Icon
     `<i class="fa-regular fa-icon"></i>`
 - Hyperlink
