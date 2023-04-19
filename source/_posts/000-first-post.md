@@ -45,9 +45,24 @@ Tables and equations:
 | $\sin(at)$ | $\frac{a}{s^2+a^2}$ |
 | $\cos(at)$ | $\frac{s}{s^2+a^2}$ |
 
-idk how to add mermaid graph. 
+#### Mermaid flowchart
 
-...will figure out one day. 
+```mermaid
+flowchart TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
+    one --> two
+    three --> two
+    two --> c2
+```
 
 ---
 

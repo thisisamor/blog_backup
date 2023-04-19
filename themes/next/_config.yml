@@ -156,7 +156,8 @@ site_state: true
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   GitHub: https://github.com/thisisamor
-  E-Mail: mailto:amor_7303@163.com 
+  Dashboard: https://amor-zhao.notion.site/amor-zhao/Amor-s-Dashboard-33d838340d45480980835d213c19ea5a
+  #E-Mail: mailto:amor_7303@163.com 
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook

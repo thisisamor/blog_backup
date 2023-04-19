@@ -152,7 +152,11 @@ Other popular web development languages:
         ```
         family: Lora, Noto Serif SC, serif
         ```
-    - mermaid
+    - mermaid (also need to add package)
+        ```
+        npm install --save hexo-filter-mermaid-diagrams
+        ```
+
     - math
 
     
@@ -259,7 +263,9 @@ Some HTML tags I used for styling:
     `<span style="color:red;"> coloured </span>`
 - Highlighted text
     `<mark> highlighted </mark>`
-    `<mark style="background-color: #<hex_code>;"> customised highlight </mark>`
+    `<mark style="background-color: #9fc5e8;"> light blue highlight </mark>`
+    `<mark style="background-color: #b6d7a8;"> light green highlight </mark>`
+    `<mark style="background-color: #ffe599;"> light yellow highlight </mark>`
 - Icon
     `<i class="fa-regular fa-icon"></i>`
 - Hyperlink
@@ -281,6 +287,10 @@ Some HTML tags I used for styling:
 <i class="fa-solid fa-link"></i> [Google Fonts](https://fonts.google.com/) 
 
 <i class="fa-solid fa-link"></i> [Hex Color Code](https://www.color-hex.com/)
+
+<i class="fa-solid fa-link"></i> [Mermaid Syntax](https://mermaid.js.org/intro/n00b-syntaxReference.html)
+
+<i class="fa-solid fa-link"></i> [Maths notation](https://upyesp.org/posts/makrdown-vscode-math-notation/)
 
 ---
 
