@@ -373,50 +373,52 @@ Relational algebra statements are like ‘intermediate code’ for SQL statement
 | <ul><li>Union</li><li>Intersection</li><li>Difference</li><li>Cartesian Product</li><ul> | <ul><li>Select</li><li>Project</li><li>Join</li><li>Aggregate</li><li>Division</li><li>Rename</li><ul> |
 
 #### Union
-- Written as (r + s) or (r U s)
+- $(r + s)$ or $(r U s)$
 - Relations must be union compatible
 - Duplicate rows are eliminated
 
 #### Intersection
-- Written as (r ∩ s)
+- $(r ∩ s)$
 - Relations must be intersection compatible
 
 #### Difference
-- Written as (r - s)
+- $(r - s)$
 - Relations have to be difference compatible
 - Includes rows that are in r but not in s
 
 #### Projection
+- ( ${\Pi}_{COND} (r) $ )
 - Extracts certain columns from the table
 
 #### Selection
-- The selection operator extracts certain rows from the table and discards the others. Retrieved tuples must satisfy a given filtering condition.
+- ( $ {\sigma}_{COND} (r) $ )
+- Extracts certain rows from the table and discards the others. Retrieved tuples must satisfy a given filtering condition.
 
 #### Cross product (cross join)
-- Written as (r X s)
+- $(r X s)$
 - Concatenates rows from two relations, making all possible combinations of rows.
 
-
 #### Join (Inner join)
-- The join operation, denoted by ($r ⋈_{COND} s$), is used to combine related tuples from two relations.
-- Here COND is the matching condition $r ⋈_{COND} s$
+- ($r ⋈_{COND} s$)
+- Combine related tuples from two relations.
+- COND = the matching condition
 
 #### Natual join
-- Denoted by (r * s)
+- ($r * s$)
 - Combines tuples of two relations using an implicit condition, i.e. the tables are related by columns that have the same names and domains.
  
 #### Left natural join
-- Denoted ($r ⟕_{COND} s$)
+- ($r ⟕_{COND} s$)
 - Combines tuples of two relations and keeps in the result every tuple from the left table, but only those from the right table that meet the join condition.
 
 #### Aggregation
-- Syntax: ($_{Grouping attribute} F _{function list} (relation name)$ ) 
-- The function list contains simple mathematical functions. 
-- Common functions are: MAX, MIN, AVG, SUM and COUNT
+- ($_{Grouping attribute} F _{function list} (relation name)$ ) 
+- The function list contains simple mathematical functions, eg: MAX, MIN, AVG, SUM, COUNT
 - A column name may be given as a grouping attribute to fragment the function outputs into groups. 
 
 #### Rename
-- Syntax: ρ (c1, c2, …, ck) (E) Rename the columns of E to c1, c2, …, ck respectively.   
+- $ρ (c1, c2, …, ck) (E) $
+- Rename the columns of E to c1, c2, …, ck respectively.   
 
 
 ### RDBMS
