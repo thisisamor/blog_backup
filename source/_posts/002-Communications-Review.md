@@ -180,7 +180,7 @@ $$ {SNR}_o = \frac {A^2 P} {2 N_o W} = \frac {P_T} {N_o W} $$
 
 #### Synchronous detection
 
-$$ {SNR}_{AM} = \frac {P} {A^2 + P} {SNR}_{baseband} $$
+$$ SNR_{AM} = (\frac {P} {A^2 + P}) SNR_{baseband} $$
 
 Performing AM is always worse than that of a baseband system, because of the wasted power which results from transmitting the carrier explicitly in the AM waveform. 
 

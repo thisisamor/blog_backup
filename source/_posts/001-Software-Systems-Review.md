@@ -454,13 +454,14 @@ a state is valid if it follows all the specified rules including constraints
 
 - Durability: database commits are final and durable even if system fails after a commit. 
 
-
-
-
-
 ---
 
 ## SQL - Data Query Language (DQL)
+
+
+
+
+
 
 
 ---

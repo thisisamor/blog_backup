@@ -172,7 +172,7 @@ Form: <mark style="background-color: #9fc5e8;">reflexive pronouns + the same way
 <mark style="background-color: #9fc5e8;">When telling to do smth, **join the reflexive pronoun onto the end** of the verb. </mark>
 
 - ¡Siéntense!
-- Cállate! 
+- ¡Cállate! 
 
 <mark style="background-color: #9fc5e8;">Drop the **-s of the nosotros form**, or the **-d of the vosotros form**, then add the pronoun. </mark>
 
