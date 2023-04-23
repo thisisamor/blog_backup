@@ -60,7 +60,7 @@ Gerund of -er and -ir verb: <mark style="background-color: #9fc5e8;">take off -e
 
 ---
 
-## Imperative 祈使句
+## Imperative 命令式
 
 ### Not to do smth
 
@@ -198,11 +198,11 @@ Form: Add the following endings to the **infinitive**, only the **nosotros** for
 | Pronombre Personal | form | (hablar) | (comer) | (vivir) |
 | ------------------ | ---- | -------- | ------- | ------- |
 | yo                 | -é   | hablaré  | comeré  | viviré  |
-| tú                 | -ás  | hablás   | comerás | vivirás |
-| él/ella/usted      | -á   | hablá    | comerá  | vivirá  |
+| tú                 | -ás  | hablarás | comerás | vivirás |
+| él/ella/usted      | -á   | hablará  | comerá  | vivirá  |
 | nosotros/nosotras  |-emos |hablaremos|comeremos|viviremos|
 | vosotros/vosotras  | -éis | hablaréis| comeréis| viviréis|
-| ellos/ellas/ustedes| -án  | hablan   | comerán | vivirán |
+| ellos/ellas/ustedes| -án  | hablaran | comerán | vivirán |
 
 ### Irregular verbs
 
@@ -230,28 +230,129 @@ Form: The same way as ordinary verbs, just add the reflexive pronoun before the 
 
 ## Conditional
 
+Form: add the following endings to the **infinitive** of the verb. 
 
+Meaning: Would like to do smth. 
 
+| Pronombre Personal | form | (hablar)  | (comer)  | (vivir)  |
+| ------------------ | ---- | --------- | -------- | -------- |
+| yo                 | -ía  | hablaría  | comería  | viviría  |
+| tú                 | -ías | hablarías | comerías | vivirías |
+| él/ella/usted      | -ía  | hablaría  | comería  | viviría  |
+| nosotros/nosotras  |-íamos|hablaríamos|comeríamos|viviríamos|
+| vosotros/vosotras  |-íais | hablaríais| comeríais| viviríais|
+| ellos/ellas/ustedes| -ían | hablarían | comerían | vivirían |
 
+### Irregular verbs
+
+The following verbs (again) do not use the infinitives as the stem of the future tense: 
+
+| verb    | stem   |
+| ------- | ------ |
+| decir   | dir-   |
+| haber   | habr-  |
+| hacer   | har-   |
+| poder   | podr-  |
+| poner   | pondr- |
+| querer  | querr- |
+| saber   | sabr-  |
+| salir   | saldr- |
+| tener   | tendr- |
+| venir   | vendr- |
+
+### Reflexive verbs 
+
+Form: The same way as ordinary verbs, just add the reflexive pronoun before the verb. 
 
 ---
 
 ## Preterite 过去式
 
+| Pronombre Personal | -ar  | (hablar) |-er/-ir| (comer) | (vivir) |
+| ------------------ | ---  | -------- | ----- | ------- | ------- |
+| yo                 | -é   | hablé    | -í    | comí    | viví    |
+| tú                 |-aste | hablaste |-iste  | comiste | viviste |
+| él/ella/usted      | -ó   | habló    | -ió   | comió   | vivió   |
+| nosotros/nosotras  |-amos | hablamos |-imos  | comimos | vivimos |
+| vosotros/vosotras  |-ateis| hablaiste|-isteis|comisteis|vivisteis|
+| ellos/ellas/ustedes|-aron | hablaron | -ieron| comieron| vivieron|
+
+### Irregular verbs
+
+| verb   |  yo     |     tú     |él/ella/usted|nosotros/nosotras|vosotros/vosotras|ellos/ellas/ustedes|
+|--------|---------|------------|-------------|-----------------|-----------------|-------------------|
+|andar   |anduve   |anduviste   |anduvo       |anduvimos        |anduvisteis      |anduvieron |
+|conducir|conduje  |condujiste  |condujo      |condujimos       |condujisteis     |condujeron |
+|dar     |di       |diste       |dio          |dimos            |disteis          |dieron  |
+|decir   |dije     |dijiste     |dijo         |dijimos          |dijisteis        |dijeron |
+|estar   |estuve   |estuviste   |estuvo       |estuvimos        |estuvisteis      |estuvieron |
+|hacer   |hice     |hiciste     |hizo         |hicimos          |hicisteis        |hicieron |
+|ir      |fui      |fuiste      |fue          |fuimos           |fuisteis         |fueron |
+|poder   |pude     |pudiste     |pudo         |pudimos          |pudisteis        |pudieron |
+|poner   |puse     |pusiste     |puso         |pusimos          |pusisteis        |pusieron |
+|querer  |quise    |quisiste    |quiso        |quisimos         |quisisteis       |quisieron |
+|saber   |supe     |supiste     |supo         |supimos          |supisteis        |supieron |
+|ser     |fui      |fuiste      |fue          |fuimos           |fuisteis         |fueron |
+|tener   |tuve     |tuviste     |tuvo         |tuvimos          |tuvisteis        |tuvieron |
+|traer   |traje    |trajiste    |trajo        |trajimos         |trajisteis       |trajeron |
+|venir   |vine     |viniste     |vino         |vinimos          |vinisteis        |vinieron |
+|ver     |vi       |viste       |vio          |vimos            |visteis          |vieron |
+
+*The preterite form of **ser** are the same as that of **ir**.*
+
+Some other verbs are regular except for the **él/ella/usted** and **ellos/ellas/ustedes** forms. 
+
+| verb   |  yo     |     tú     |él/ella/usted|nosotros/nosotras|vosotros/vosotras|ellos/ellas/ustedes|
+|--------|---------|------------|-------------|-----------------|-----------------|-------------------|
+| dormir | dormí   | dormiste   | durmió      | dormimos        | dormisteis      | durmieron         |
+| morir  | morí    | moriste    | murió       | morimos         | moristeis       | murieron          |
+| pedir  | pedí    | pediste    | pidió       | pedimos         | pedisteis       | pidieron          |
+| reir   | reí     | reíste     | rio         | reímos          | reísteis        | rieron            |
+| seguir | seguí   | seguiste   | siguió      | seguimos        | seguisteis      | siguieron         |
+| sentir | sentí   | sentiste   | sintió      | sentimos        | sentisteis      | sintieron         |
+
+Some words have accent in all persons apart from **ellos/ellas/ustedes** form, and the vowel changes to y in all the third person forms. 
+
+| verb      |  yo     |  tú     | él/ella/usted | nosotros/nosotras | vosotros/vosotras | ellos/ellas/ustedes |
+|-----------|---------|---------|---------------|-------------------|-------------------|---------------------|
+| caer      | caí     | caíste  | cayó          | caímos            | caísteis          | cayeron             |
+| construir | construí | construiste | construyó | construimos       | construisteis     | construyeron        |
+| leer      | leí     | leíste  | leyó          | leímos            | leísteis          | leyeron             |
+
+Words that end in **-zar, -gar and -car** in the infinitive changes the **z to c**, the **g to gu** and the **c to qu** in the **yo** form. 
+
+| verb    |  yo     |     tú     |él/ella/usted|nosotros/nosotras|vosotros/vosotras|ellos/ellas/ustedes|
+|---------|---------|------------|-------------|-----------------|-----------------|-------------------|
+| cruzar  | crucé   | cruzaste   | cruzó        | cruzamos        | cruzasteis      | cruzaron          |
+| empezar | empecé  | empezaste  | empezó       | empezamos       | empezasteis     | empezaron         |
+| pagar   | pagué   | pagaste    | pagó         | pagamos         | pagasteis       | pagaron           |
+| sacar   | saqué   | sacaste    | sacó         | sacamos         | sacasteis       | sacaron           |
+
+
+### Reflexive verbs 
+
+Form: The same way as ordinary verbs, just add the reflexive pronoun before the verb. 
 
 ---
 
-## Imperfect
+## Imperfect Tense 过去未完成时
 
-## Perfect
 
-## Pluperfect / Past Perfect
 
+## Perfect Tense 现在完成时
+
+## Pluperfect / Past Perfect 过去完成时
+
+
+---
 
 ## Passive
 
+
 ## Gerund 动名词
 
-## Subjunctive
+
+## Subjunctive 虚拟式
+
 
 ## Accents
