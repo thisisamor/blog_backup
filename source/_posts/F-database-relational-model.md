@@ -1,7 +1,7 @@
 ---
-title: Database definition
+title: Database Definition
 date: 2023-04-19 14:28:19
-categories: Study
+categories: Flashcard
 tags: 
     - study 
     - software systems

@@ -1,7 +1,7 @@
 ---
 title: Software Systems Review
 date: 2023-04-18 09:22:42
-categories: Study
+categories: Review
 tags: 
     - study 
     - software systems
@@ -169,7 +169,7 @@ Inheritance was not originally a part of ER diagrams. But later it was added int
 
 Below shows a short and simple version of Netflix movie meta-data: 
 
-![ER diagram](https://github.com/thisisamor/blog_pic/blob/main/Software_Systems/ER-diagram.jpg?raw=true)
+![ER diagram](https://github.com/thisisamor/blog_pic/blob/main/year2/Software_Systems/ER-diagram.jpg?raw=true)
 
 *How to draw it?* 
 
@@ -258,7 +258,7 @@ When implemented as a physical model
 - eg: Movies (title,  year, length, genre)
 - The schemas of the **entire set of relations** of a database make up the <mark style="background-color: #9fc5e8;">relational database schema</mark> (or database schema). 
 
-![Relational Schema](https://github.com/thisisamor/blog_pic/blob/main/Software_Systems/relational%20schema.jpg?raw=true)
+![Relational Schema](https://github.com/thisisamor/blog_pic/blob/main/year2/Software_Systems/relational%20schema.jpg?raw=true)
 
 *How to convert the conceptual model (ER diagram) to an internal model (relational schema)?*
 

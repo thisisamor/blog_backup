@@ -1,10 +1,10 @@
 ---
 title: Compilers Review
+categories: Review
 tags:
   - study
   - compilers
   - review
-tags:categories: Study
 description: Review of Compilers.
 date: 2023-04-22 09:03:19
 ---
@@ -191,14 +191,16 @@ Natual language: is normally spoken by people.
 
 Need to keep track of all the states you **could** be in. 
 
-![NFA1](https://github.com/thisisamor/blog_pic/blob/main/Compilers/NFA1.jpg?raw=true)
-![NFA2](https://github.com/thisisamor/blog_pic/blob/main/Compilers/NFA2.jpg?raw=true)
+Thompson's algorithm: 
+
+![NFA1](https://github.com/thisisamor/blog_pic/blob/main/year2/Compilers/NFA1.jpg?raw=true)
+![NFA2](https://github.com/thisisamor/blog_pic/blob/main/year2/Compilers/NFA2.jpg?raw=true)
 
 <mark style="background-color: #9fc5e8;">Deterministic Finite Automaton (DFA)</mark>
 
 Need to keep track of the state you **are** in. 
 
-Steps: 
+Convert NFA to DFA: 
 1. Start with the starting state. 
 2. "If we have input a, what are the possible states we can go to, from all of which states we are possibly in currently."
 3. The "epsilon transition" ($\varepsilon$) means that we can go to either of the states. 
@@ -245,13 +247,38 @@ int main() {
 
 ---
 
-## Syntax Analysis
+## Syntax Analysis (Parse)
+
+*A sytax tree is a data structure in which the interior nodes represent operations, and the leaves represent operands.*
+
+*This process is called **syntax directed translation**.*
+
+### Grammars
+
+
+
+
+
+### Ambiguities in Programming Languages
+
+
+
+### The Parsing Problem
+
+
+
+
+
+
+
 
 
 
 ---
 
 ## Top down parsing
+
+
 
 
 

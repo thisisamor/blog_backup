@@ -1,18 +1,18 @@
 ---
 title: Communications Review
 date: 2023-04-18 14:37:41
+categories: Review
 tags:
   - study
   - communications
   - review
-categories: Study
 description: Review notes of Communications.
 ---
 
 
 <p style="opacity: 0.7;">Start Notes: 
 
-<small style="opacity: 0.7;"> I studied by going through the [lecture notes](https://github.com/thisisamor/blog_pic/blob/main/Communications/Comms2_notes_Spring.pdf) from last year. (This year EE department changed the prof for the course, whose lectures were unf much criticised.) 
+<small style="opacity: 0.7;"> I studied by going through the [lecture notes](https://github.com/thisisamor/blog_pic/blob/main/year2/Communications/Comms2_notes_Spring.pdf) from last year. (This year EE department changed the prof for the course, whose lectures were unf much criticised.) 
 
 [*Communication Systems by Haykin, Simon*](https://library-search.imperial.ac.uk/discovery/fulldisplay?docid=alma996665854401591&context=L&vid=44IMP_INST:ICL_VU1&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&isFrbr=true&tab=Everything&query=any,contains,communication%20systems&sortby=date_d&facet=frbrgroupid,include,9028523163766173407&offset=0), the textbook, was well-written. </small>
 
@@ -108,7 +108,7 @@ The waveform can be considered as <mark style="background-color: #9fc5e8;">the p
 
 Signal s(t) is corrupted by the addition of a random noise signal n(t): 
 
-![additive noise channel](https://github.com/thisisamor/blog_pic/blob/main/Communications/review%20notes/1%20additive%20noise%20channel.jpg?raw=true)
+![additive noise channel](https://github.com/thisisamor/blog_pic/blob/main/year2/Communications/review%20notes/additive-noise-channel.jpg?raw=true)
 
 
 ### A statistical Description of Noise
@@ -128,7 +128,7 @@ Signal s(t) is corrupted by the addition of a random noise signal n(t):
 
 
 
-(see [maths B](https://github.com/thisisamor/blog_pic/blob/main/Maths/Maths-B-Probability.pdf))
+(see [maths B](https://github.com/thisisamor/blog_pic/blob/main/year2/Maths/Maths-B-Probability.pdf))
 
 #### Autocorrelation
 
