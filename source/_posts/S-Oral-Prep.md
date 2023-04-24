@@ -107,7 +107,7 @@ description: Prepared smth for myself to memorise before the spanish oral.
 
 ## Examples
 
-*A few paragraphs to get familia with the language:*
+*A few paragraphs to get familiar with the language:*
 
 Ella está vestida con un vestido rojo de seda y zapatos negros de tacón alto. Su cabello rubio está recogido en un moño elegante y lleva unos pendientes de diamantes. Parece radiante y llena de energía. Su sonrisa amplia y su mirada brillante sugieren que está emocionada por lo que viene.
 

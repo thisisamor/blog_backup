@@ -102,6 +102,7 @@ The waveform can be considered as <mark style="background-color: #9fc5e8;">the p
     - the rapid and random motion of electrons within a condector due to thermal agitation
     - Gaussian distributed with 0 mean
     - follows central limit theorem
+    - $P_{thermal}=kTB$
     - effective noise temperature: $T_e = \frac {P} {kB}$
 
 #### The additive noise channel
@@ -115,17 +116,48 @@ Signal s(t) is corrupted by the addition of a random noise signal n(t):
 
 #### Probability
 
-<mark style="background-color: #9fc5e8;">random variable</mark>
+Random experiment: an experiment whose outcome cannot be predicted precisely; 
 
-<mark style="background-color: #9fc5e8;">distribution functions</mark>
+Event: a collection of possible outcomes of the random experiment; 
 
-<mark style="background-color: #9fc5e8;">probability density functions</mark>
+Sample space $S$: the event of all possible separately identifiable outcomes; 
 
-<mark style="background-color: #9fc5e8;">statistical average</mark>
+<mark style="background-color: #9fc5e8;">Random variable $x$</mark>: a rule or relationship that assigns a real number $x_i$ to the $i^{th}$ sample point in the sample space $x_i \in S$; 
 
-<mark style="background-color: #9fc5e8;">random process</mark>
+Probability $P_X(x_i)$: the probability of random variable $x$ taking the value $x_i$; (Includes all possible outcomes of the experiment is 1; Probability of two events that do not have any common outcome is the sum of the probabilities of the two events separately.)
 
+<mark style="background-color: #9fc5e8;">Distribution functions</mark>: (also called cumulative function) the probability of the variable taking the value less than the argument of the distribution function; 
 
+$$ F_f(z) \equiv P_f (f \leq q ) $$
+
+$F_f(z)$ is the distribution function, $P_f$ is the probability, $f$ is the random variable and $z$ is a number. 
+
+$$ F_f(-\infty) = 0 \quad F_f(\infty) = 1 $$
+
+<mark style="background-color: #9fc5e8;">Probability density functions</mark>: the derivative of the distribution function; 
+
+$$ p_f(f) \equiv \frac{d}{dz} F_f(z) $$
+
+Gaussian pdf: $$ p_x(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-(x-m)^2/(2\sigma^2)} $$
+
+<mark style="background-color: #9fc5e8;">Expected value $E \lbrace f \rbrace$</mark>: (also called mean value) $$ E \lbrace f \rbrace \equiv \mu_f \equiv \int_{-\infty}^{\infty} zp_f(z)dz $$
+
+Expectation operator: $E \lbrace . \rbrace$
+
+Variance: 
+$$ \sigma^2_f \equiv E\lbrace (f-\mu_f)^2 \rbrace =  E\lbrace f^2 \rbrace - \mu^2_f $$
+
+For a zero-mean random variable, the variance is equal to the mean square. 
+
+<mark style="background-color: #9fc5e8;">Random process</mark>: a time-varying function that assigns the outcome of a random experiment to each time instant $f(t;s_i)$; 
+
+<mark style="background-color: #9fc5e8;">Autocorrelation function</mark>: 
+
+$$ R_{ff}(t_1, t_2) \equiv E\lbrace f(t_1;s_i)f(t_2;s_i) \rbrace = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} z_1 z_2 p_f(z_1, z_2; t_1, t_2)dz_1 dz_2 $$
+
+Stationary random process: 
+1. the expectation value doesn't depend on $t$; 
+2. the autocorrelation function is translation invariant: $$R_{ff}(t_1, t_2) = E\lbrace f(t_1+t_0;s_i)f(t_2+t_0;s_i) \rbrace $$ for any $t_0$. 
 
 
 (see [maths B](https://github.com/thisisamor/blog_pic/blob/main/year2/Maths/Maths-B-Probability.pdf))
@@ -190,6 +222,18 @@ Performing AM is always worse than that of a baseband system, because of the was
 
 
 ### Frequency Modulation (FM)
+
+$$ s(t) = A cos[ 2\pi f_ct +2\pi k_f \int_{-\infty}^{t}m(\tau)d\tau ] $$
+
+<mark style="background-color: #9fc5e8;">Frequency deviation</mark>
+
+<mark style="background-color: #9fc5e8;">Deviation ratio (FM modulation index)</mark>
+
+#### Carson's rule
+
+$$ B_T = 2W(\beta +1) = 2(\Delta f + W) $$
+
+
 
 
 ### Comparison of Analogue Communication Systems
