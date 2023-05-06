@@ -3,7 +3,7 @@ title: Control Systems Review
 date: 2023-04-24 11:05:34
 categories: Review
 tags:
-  - study
+  - college
   - control systems
   - review
 description: Review notes of Control Systems.

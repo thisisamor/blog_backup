@@ -3,7 +3,7 @@ title: Signals And Systems Review
 date: 2023-04-23 08:45:40
 categories: Review
 tags:
-  - study
+  - college
   - signals and systems
   - review
 description: Review notes of Signals and Systems.
@@ -439,15 +439,15 @@ These requirements are relaxed by using oversampling.
 - Increases the computation complexity (more samples per second to process). 
 - Decreases the complexity of the anti-aliasing filter design (analog filtering). 
 
-### Quantization
+### Quantisation
 
-Sampling is discrete in **time**, quantization is discrete in **amplitude**. 
+Sampling is discrete in **time**, quantisation is discrete in **amplitude**. 
 
-Define a set of amplitudes known as the **quantization levels**. 
+Define a set of amplitudes known as the **quantisation levels**. 
 
-Precision of the quantization is proportional to the number of bits in each codeword. 
-- 8 bits gives $2^8=256$ quantization levels (for image)
-- 16 bits gives $2^16=65536$ quantization levels (for music)
+Precision of the quantisation is proportional to the number of bits in each codeword. 
+- 8 bits gives $2^8=256$ quantisation levels (for image)
+- 16 bits gives $2^16=65536$ quantisation levels (for music)
 
 ---
 

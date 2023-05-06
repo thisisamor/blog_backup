@@ -3,7 +3,7 @@ title: Communications Review
 date: 2023-04-18 14:37:41
 categories: Review
 tags:
-  - study
+  - college
   - communications
   - review
 description: Review notes of Communications.
@@ -175,12 +175,44 @@ The power spectral density of a random process is defined as the Fourier Transfo
 
 ### Representation of Bandlimited Noise
 
+Any communication system that uses carrier modulation will typically have a bandpass filter at the front end of the receiver, which allows the modulated signal to pass, and is designed to restrict out-of-band noise from entering the receiver. 
 
+#### Bandpass representation
+
+$$ n(t) = n_I(t)cos(2\pi f_c t) - n_Q(t)sin(2\pi f_c t) $$
+
+where: 
+
+$$ n_I(t) = \sum_{k} a_k cos(2\pi (f_k - f_c )t  + \theta_k) $$
+$$ n_Q(t) = \sum_{k} a_k sin(2\pi (f_k - f_c )t  + \theta_k) $$
+
+![n_I and n_Q](https://github.com/thisisamor/blog_pic/blob/main/year2/Communications/review%20notes/n_I%20and%20n_Q.jpg?raw=true)
+
+#### Average power and power spectral density
+
+#### Phasor representation
+
+$$ n(t) = Re \lbrace g(t)e^{j2\pi f_ct} \rbrace $$
+
+$$ g(t) = n_I(t) + jn_Q(t) $$
+
+$$ g(t) = r(t)e^{j\phi (t)} $$
+
+where: 
+
+$$ Envelope: \ r(t) = \sqrt { n_I(t)^2 + n_Q(t)^2} $$
+$$ Phase: \ \phi (t) = tan^{-1}[n_Q(t)/n_I(t)] $$
+
+If $n_I(t)$ and $n_Q(t)$ are Gaussian-distributed, then envelope of the noise (ie. the magnitude $r(t)$) has a Rayleigh distribution, and the phase of the noise (ie. $\phi (t)$) is uniformly distributed. 
 
 
 ---
 
 ## Noise in Analog Communication Systems
+
+<mark style="background-color: #9fc5e8;">Signal-to-noise ratio (SNR)</mark>: measures the **performance** of the channel (not the efficiency). 
+
+
 
 
 ### Baseband Communication System

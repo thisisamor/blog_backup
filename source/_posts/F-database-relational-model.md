@@ -3,7 +3,7 @@ title: Database Definition
 date: 2023-04-19 14:28:19
 categories: Flashcard
 tags: 
-    - study 
+    - college 
     - software systems
     - flashcard
 description: Flashcard for myself, mainly on relational model. 

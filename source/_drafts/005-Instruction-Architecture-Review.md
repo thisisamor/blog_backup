@@ -1,12 +1,14 @@
 ---
 title: Instruction Architecture Review
-tags:categories: Study
-tags: 
-    - study
-    - instruction architecture
-    - review
-description: A review for Instruction Architecture Final Exam. 
+date: 2023-05-06 13:53:15
+categories: Review
+tags:
+  - college
+  - instruction architecture
+  - review
+description: A review of Instruction Architecture Final Exam.
 ---
+
 
 <p style="opacity: 0.7;">Start Notes: 
 
@@ -24,6 +26,7 @@ description: A review for Instruction Architecture Final Exam.
 
 ## Verilator & Testbenches
 
+---
 
 ## Memory and LFSR
 

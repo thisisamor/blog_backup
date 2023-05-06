@@ -3,7 +3,7 @@ title: Software Systems Review
 date: 2023-04-18 09:22:42
 categories: Review
 tags: 
-    - study 
+    - college 
     - software systems
     - review
 description: Review notes of Software Systems. 
