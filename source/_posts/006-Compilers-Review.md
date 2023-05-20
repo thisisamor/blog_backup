@@ -300,4 +300,174 @@ int main() {
 
 
 
+---
+
+## Coursework 
+
+<small style="opacity: 0.7;"> I'm reviewing this because we are having a project management viva on this project this term...</small>
+
+We built a [C compiler](https://github.com/LangProc/langproc-2022-cw-Team09/tree/main). The source language is pre-processed C90, and the target language is RISC-V assembly. The target environment is Ubuntu 22.04, VS Code has good support for collaborative programming and working inside Docker containers. 
+
+The following features were implemented and tested: 
+- a file containing just a single function with no arguments
+- variables of int type
+- local variables
+- arithmetic and logical expressions
+- if-then-else statements
+- while loops
+- files containing multiple functions that call each other
+- functions that take up to four parameters
+- for loops
+- arrays declared globally (i.e. outside of any function in your file)
+- arrays declared locally (i.e. inside a function)
+- reading and writing elements of an array
+- recursive function calls
+- the enum keyword
+- switch statements
+- the break and continue keywords
+- variables of double, float, char, unsigned, structs, and pointer types
+- calling externally-defined functions (i.e. the file being compiled declares a function, but its definition is provided in a different file that is linked in later on)
+- functions that take more than four parameters
+- mutually recursive function calls
+- locally scoped variable declarations (e.g. a variable that is declared inside the body of a while loop, such as while(...) { int x = ...; ... })
+- the typedef keyword
+- the sizeof(...) function (which takes either a type or a variable)
+- taking the address of a variable using the & operator
+- dereferencing a pointer-variable using the * operator
+- pointer arithmetic
+- character literals, including escape sequences like \n
+- strings (as NULL-terminated character arrays)
+- declaration and use of structs
+
+[This yacc grammar](https://www.lysator.liu.se/c/ANSI-C-grammar-y.html) was used as the basic parsing structure. With the help of a basic lexing algorithm, we worked on the corresponding ast files needed to compile C programmes. 
+
+[This website](https://godbolt.org/) is an online compiler between different high-level languages and assembly code, and sometimes is helpful for understanding which operations should be going on. 
+
+### Program
+
+This is where we kept all of our pointers and type/value mappings. 
+
+```
+typedef std::map<std::string, std::string> variable_type_mapping;
+typedef std::map<std::string, std::string> typedef_name_mapping;
+typedef std::map<std::string, std::string> label_string_mapping;
+typedef std::map<std::string, int> variable_address_mapping;
+typedef std::map<std::string, int> function_address_mapping;
+typedef std::map<std::string, int> variable_value_mapping;
+typedef std::map<std::string, std::string> struct_type_mapping;
+typedef std::map<std::string, struct_type_mapping> struct_type_tracker_mapping;
+typedef std::map<std::string, int> struct_address_mapping;
+typedef std::map<std::string, struct_address_mapping> struct_address_tracker_mapping;
+typedef std::map<std::string, int> struct_size_mapping;
+```
+
+These represents the memory space in a computer (every time a new variable is declared it is allocated an address, although in reality the algorithm would be more complex, in order to save memory space and make processes like garbage collecting easier). There are corresponding functions to get value from the above mappings (or update, reset etc. when needed). 
+
+```
+std::vector<std::string> loop_end_label{};
+std::vector<std::string> stmt_end_label{};
+```
+These vectors are used to keep track of the label values, for some features like `GOTO`, it is necessary to track the names of the latest labels. 
+
+### Expression
+
+`Expression` class provides a common base type for each step, in this way we can store and manipulate expressions of different types in the uniform structure.
+
+```
+class Expression
+{
+public:
+    virtual ~Expression()
+    {}
+
+    virtual std::string getExprId() const
+    { return ""; }
+
+    virtual std::string getBaseReg(Program &program) const
+    { return "s0"; }
+
+    virtual std::string getType(Program &program) const
+    { return "int"; }
+
+    //! Tell and expression to print itself to the given stream
+    virtual void print(std::ostream &dst) const =0;
+
+    //! Evaluate the tree using the given mapping of variables to numbers
+    virtual int evaluate(
+        Program &program,
+        std::ostream &w
+    ) const
+    { throw std::runtime_error("Not implemented."); }
+};
+```
+
+Other classes in this part includes `ExpressionList` and `ArgumentExprList`. 
+
+
+### Primitives
+
+In this part we implemented three classes: `Variable`, `Number` and `StringLiteral` (all inherit from the `Expression` class). 
+
+When evaluate functions in these classes are called, the values of the variable are mapped into the corresponding maps in `program`. 
+
+Stack pointers are updated when needed. 
+
+### Declaration
+
+The `program` (as mentioned before) and output stream `w` are used for compiling the output programme. Different types of variables are declared in corresponding classes, when called by the yacc syntax tree. 
+
+- `Declaration`
+- `DeclarationList`
+- `InitDeclaration`
+- `InitDeclarationList`
+- `TypeDeclaration`
+- `IdentifierDelcaration`
+- `ParameterDeclaration`
+- `ConstArrayDeclaration`
+- `FunctionDeclaration`
+- `PointerDeclaration`
+- `TypedefDeclaration`
+- `StructDeclaration`
+
+### Function
+
+- `Function`
+- `ExternalDecl`: global variable declarations and function declarations
+- `TransUnit`: translate stack pointers between functions
+
+### Operators
+
+For each operation, trace down the syntax tree by evaluating left side and right side separately. 
+
+Operations have different outputs for different variable types (eg: float and int )
+
+The operators include: ADD, SUB, ASSIGN, DIVIDE, MULTIPLY, MOD, LEFT SHIFT, RIGHT SHIFT, SET LESS THAN, SET GREATER THAN, EQUAL (not / greater / less), BIT WISE / LOGICAL (AND / OR / XOR). 
+
+### Statements
+
+- `StmtList`
+- `CompoundStmt`
+- `ExpressionStmt`
+- `JumpStmt`
+- `GotoStmt`
+- `ContinueStmt`
+- `BreakStmt`
+- `LabeledStmt`
+- `SelectionStmt` (if else)
+- `IterationStmt` (while, for)
+- `SwitchStmt`
+- `CaseStmt`
+- `DefaultStmt`
+
+### Enumerator
+
+Handled initialisation and evaluation of using of enumerator. 
+
+### Postfix
+
+Handled different expressions using Reverse Polish Notation, implemented rules to push and pop variables and operators into and from the stack. 
+
+### Unary
+
+Handled functions like `size_of`, and prefix expressions. 
 
