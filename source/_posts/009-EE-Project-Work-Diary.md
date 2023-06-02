@@ -9,7 +9,7 @@ description: My day-to-day work diary of my college project.
 ---
 <p style="opacity: 0.7;">Start Notes: 
 
-<small style="opacity: 0.7;"> Our second end-of-year project is to build a dynamically balanced rover which is capable of exploring and solving a irregular maze through camera detection and analysis, and present the result on a website with the help of reliable server communication and database. </small>
+<small style="opacity: 0.7;"> Our second end-of-year project is to build a dynamically balanced rover which is capable of exploring and solving an irregular maze through camera detection and analysis, and present the result on a website with the help of reliable server communication and database. </small>
 
 ---
 
@@ -17,7 +17,7 @@ description: My day-to-day work diary of my college project.
 
 ### May 18th (Thu)
 
-<mark style="background-color: #7099a7;">Year 2 project introduction. </mark>
+<mark style="background-color: #7099a7;"> Year 2 project introduction. </mark>
 
 #### Functional Requirements
 
@@ -71,7 +71,7 @@ energy conversion modules
 
 ### May 19th (Fri)
 
-<mark style="background-color: #7099a7;">First group meeting, discussed about the project requirements, went up with the basic idea of rover algorithm, listed and assigned tasks. </mark>
+<mark style="background-color: #7099a7;"> First group meeting, discussed about the project requirements, went up with the basic idea of rover algorithm, listed and assigned tasks. </mark>
 
 #### Tasks
 
@@ -106,7 +106,7 @@ For the above algorithm, the following assumptions were made:
 
 ### May 20th (Sat)
 
-<mark style="background-color: #7099a7;">Went though basic JavaScript tutorial, set up AWS server environment for node.js, express and dynamoDB. Designed basic polling algorithm. </mark>
+<mark style="background-color: #7099a7;"> Went though basic JavaScript tutorial, set up AWS server environment for node.js, express and dynamoDB. Designed basic polling algorithm. </mark>
 
 #### Server checklist
 
@@ -132,9 +132,9 @@ For the above algorithm, the following assumptions were made:
 
 ### May 22nd (Mon)
 
-<mark style="background-color: #7099a7;">Wrote code for ESP32 microcontroller to connect to WiFi. Tested with mobile phone hot spot. Set up VS code environment for arduino platform (bcs it looks better). </mark>
+<mark style="background-color: #7099a7;"> Wrote code for ESP32 microcontroller to connect to WiFi. Tested with mobile phone hot spot. Set up VS code environment for arduino platform (bcs it looks better). </mark>
 
-<mark style="background-color: #7099a7;">Established and tested D8M camera with FPGA connection. (Can see the image from laptop now.) </mark>
+<mark style="background-color: #7099a7;"> Established and tested D8M camera with FPGA connection. (Can see the image from laptop now.) </mark>
 
 #### ESP32 WiFi connection
 
@@ -179,7 +179,7 @@ void wifi_connection()
 
 ### May 23rd (Tue)
 
-<mark style="background-color: #7099a7;">Wrote and tested HTTP POST request with a simple AWS web server. </mark>
+<mark style="background-color: #7099a7;"> Wrote and tested HTTP POST request with a simple AWS web server. </mark>
 
 POST request sent by the rover: 
 ```
@@ -309,11 +309,11 @@ server.listen(port, () => {
 
 ### May 24th (Wed)
 
-<mark style="background-color: #7099a7;">Met Ed Stott, who instructed more on maze complexity. </mark>
+<mark style="background-color: #7099a7;"> Met Ed Stott, who instructed more on maze complexity. </mark>
 
-<mark style="background-color: #7099a7;">Tested camera detection: when approaching to a wall, set the wall flag to HIGH. (Visual detection was done by setting restrictions on the region of pixels whose colour code is considered as white.) </mark>
+<mark style="background-color: #7099a7;"> Tested camera detection: when approaching to a wall, set the wall flag to HIGH. (Visual detection was done by setting restrictions on the region of pixels whose colour code is considered as white.) </mark>
 
-<mark style="background-color: #7099a7;">Established connection between FPGA output and ESP32 input, encountered problem when using digitalRead on the arduino side. (The voltage output was as expected according to the value measured with a multimeter, but ESP32 constantly read a HIGH input). </mark>
+<mark style="background-color: #7099a7;"> Established connection between FPGA output and ESP32 input, encountered problem when using digitalRead on the arduino side. (The voltage output was as expected according to the value measured with a multimeter, but ESP32 constantly read a HIGH input). </mark>
 
 #### Maze complexity
 
@@ -323,7 +323,7 @@ server.listen(port, () => {
 > Some walls will not be parallel with any side of the arena. The smallest gap will be 350mm. 
 > There could be multiple paths to solve the maze, aka “floating islands” inside. 
 
-<small style="opacity: 0.7;">I'm not satisfied with this maze complexity specification thing at all. Our department literally had three weeks during our final exams to come up with ideas of our summer project. But in the end, they gave us this briefing with very few components ready and they had no idea what the maze should be like. They initially wanted to build a test arena with blocks and lighting strips where the walls are all parallel to the sides. It was a few days later when they realised that students were planning to map the whole arena as a matrix and decided this would be too straight-forward. They changed the whole arena to make it irregular - and impossible if not discretely calculate the location of the rover. 
+<small style="opacity: 0.7;"> I'm not satisfied with this maze complexity specification thing at all. Our department literally had three weeks during our final exams to come up with ideas of our summer project. But in the end, they gave us this briefing with very few components ready and they had no idea what the maze should be like. They initially wanted to build a test arena with blocks and lighting strips where the walls are all parallel to the sides. It was a few days later when they realised that students were planning to map the whole arena as a matrix and decided this would be too straight-forward. They changed the whole arena to make it irregular - and impossible if not discretely calculate the location of the rover. 
 
 I'm very glad to have some challenging tasks, but it made me a bit frustrated that they didn't prepare everything properly and i had to re-plan our algorithm for so many times. </small>
 
@@ -333,11 +333,11 @@ I'm very glad to have some challenging tasks, but it made me a bit frustrated th
 
 ### May 25th (Thu)
 
-<mark style="background-color: #7099a7;">Solved yesterday's problem (by applying FPGA cap board pin mapping), tested ESP32 digital read pin from FPGA (a flag showing whether or not a wall is detected). Tested digital write to control FPGA key (zoom in / zoom out / focus). </mark>
+<mark style="background-color: #7099a7;"> Solved yesterday's problem (by applying FPGA cap board pin mapping), tested ESP32 digital read pin from FPGA (a flag showing whether or not a wall is detected). Tested digital write to control FPGA key (zoom in / zoom out / focus). </mark>
 
-<mark style="background-color: #7099a7;">Changed the basic wall detection into more specific requirements: detecting whether or not the wall is horizontal in the camera view. </mark>
+<mark style="background-color: #7099a7;"> Changed the basic wall detection into more specific requirements: detecting whether or not the wall is horizontal in the camera view. </mark>
 
-<mark style="background-color: #7099a7;">Planned new maze solving algorithm on updated maze complexity rules and current ability of camera detection (based on experiment). </mark>
+<mark style="background-color: #7099a7;"> Planned new maze solving algorithm on updated maze complexity rules and current ability of camera detection (based on experiment). </mark>
 
 #### ESP32 checklist (updated)
 
@@ -420,11 +420,11 @@ I'm very glad to have some challenging tasks, but it made me a bit frustrated th
 
 ### May 26th (Fri)
 
-<mark style="background-color: #7099a7;">Tested 3-bit wall detection, wrote and tested digital read function with threshold values for unstable camera detection scenarios. Lit up the beacons and tested colour detection. </mark>
+<mark style="background-color: #7099a7;"> Tested 3-bit wall detection, wrote and tested digital read function with threshold values for unstable camera detection scenarios. Lit up the beacons and tested colour detection. </mark>
 
-<mark style="background-color: #7099a7;">Discussed and planned the data structure for communication between ESP32 and web server. Tested the plotting code which uses the trace of rover to reconstruct the maze (JS + CSS). </mark>
+<mark style="background-color: #7099a7;"> Discussed and planned the data structure for communication between ESP32 and web server. Tested the plotting code which uses the trace of rover to reconstruct the maze (JS + CSS). </mark>
 
-<mark style="background-color: #7099a7;">Designed the state machine for motor control algorithm and added conditions on wall detection. </mark>
+<mark style="background-color: #7099a7;"> Designed the state machine for motor control algorithm and added conditions on wall detection. </mark>
 
 #### Stepper motor control
 
@@ -454,10 +454,704 @@ We need the motor driver to be precise, in order to precisely:
 
 This weekend: 
 
-- [ ] Design the state machine so that it fits into the loop function in arduino. 
+- [x] Design the state machine so that it fits into the loop function in arduino. 
 - [ ] Go through the graph searching algorithm, see if there is anything to improve. 
-    - [ ] memory data structure 
+    - [x] memory data structure 
     - [ ] least amount of turning around
 - [ ] If red and yellow beacons are hard to recognise, position calculation optimisation. 
 
+---
 
+## Week 2
+
+### May 29th (Mon)
+
+<mark style="background-color: #7099a7;"> Modified function to read beacon detection result from FPGA (mostly the same as wall detection), wrote the corresponging functions for position calculation and estimation (the first one uses angle measured between 2 beacons to locate itself inside the maze, the second one estimates its position simply by adding the revolution of motor to the previous position). </mark>
+
+<mark style="background-color: #7099a7;"> Designed and implemented a state machine in ESP32 data memory to keep track of the state. The state would be checked at the beginning of each loop, after which the program would enter the corresponding condition to execute the functions. </mark>
+
+#### Angle calculation
+
+
+
+#### State machine
+
+The following code shows how the state machine is implemented inside data memo. More sates may have to be added later (eg: `try` state is when a wall is supposed to be "horizontal" but the rover is approaching from a certain angle because of motor uncertainty, and would not trigger the flag). 
+
+```
+typedef enum 
+{
+    no_wall,
+    turn_left,
+    turn_right,
+    // may have: try
+    new_node,
+    find_next_path, 
+    // optional: fast
+    finish
+} State;
+State currentState = no_wall;
+void next_state(int next)
+{
+    switch (currentState) 
+    {
+        case no_wall:  // 0
+            if (next == 010) 
+            {
+                currentState = turn_left;
+            } 
+            else if(next == 100)
+            {
+                currentState = turn_right; 
+            }
+            else if(next == 111)
+            {
+                currentState = new_node; 
+            }
+            break;
+        case turn_left:  // 1
+            currentState = new_node;
+            break;
+        case turn_right:  // 2
+            currentState = new_node;
+            break;
+        case new_node:  // 3
+            currentState = find_next_path;
+            break;
+        case find_next_path:  // 4
+            currentState = no_wall;
+            break;
+        default:
+            currentState = no_wall;
+    }
+}
+```
+
+---
+
+### May 30th (Tue)
+
+<mark style="background-color: #7099a7;"> Wrote code for Node data structure and process stack. This should enable the rover to store the explored part of the maze for optimisation. More algorithm have to be implemented though. </mark>
+
+#### Data structure - Node
+
+The following is the hash table that nodes are going to be stored in. I'm not that confirmed that we are using hash table? may have to think about the best way to store & look things up later... TODO TODO TODO...
+
+```
+struct Node
+{
+    int node_id; 
+    std::pair<int, int> position; 
+    std::vector<std::vector<int>> connected_node; 
+    // [0] = id; [1] = left_wall; [2] = right_wall; 
+}; 
+
+struct HashEntry 
+{
+    int key;
+    Node value;
+    struct HashEntry* next;
+};
+
+#define TABLE_SIZE 30
+struct HashTable 
+{
+    struct HashEntry* table[TABLE_SIZE];
+};
+
+int hashFunction(int key) 
+{
+    // Perform some hash calculation based on the key
+    return key % TABLE_SIZE;
+}
+
+HashTable* node_graph = NULL; 
+Node null_node; 
+int last_id; 
+
+void insert(struct HashTable* ht, int key, Node value) 
+{
+    int index = hashFunction(key);
+    
+    // Create a new entry
+    struct HashEntry* newEntry = (struct HashEntry*)malloc(sizeof(struct HashEntry));
+    newEntry->key = key;
+    newEntry->value = value;
+    newEntry->next = NULL;
+    
+    // Check if the index is empty
+    if (ht->table[index] == NULL) 
+    {
+        ht->table[index] = newEntry;
+    } 
+    else 
+    {
+        // Handle collision by chaining
+        struct HashEntry* current = ht->table[index];
+        while (current->next != NULL) {
+            current = current->next;
+        }
+        current->next = newEntry;
+    }
+}
+
+void graph_init()
+{
+    Node node0; 
+    node0.node_id = 0; 
+    node0.position = std::make_pair(175, -175); 
+    insert(node_graph, 0, node0); 
+    last_id = 0; 
+}
+
+Node get_node(struct HashTable* ht, int key)
+{
+    int index = hashFunction(key);
+    
+    // Traverse the linked list at the index
+    struct HashEntry* current = ht->table[index];
+    while (current != NULL) 
+    {
+        if (current->key == key) 
+        {
+            return current->value;
+        }
+        current = current->next;
+    }
+    // should not happen
+    Serial.println("Wrong: cannot find node!"); 
+    return null_node; // (if not found)
+}
+
+void add_node( std::pair<int, int> new_node_position, std::vector<std::vector<int>> connect )
+{
+    Node tmp; 
+    last_id ++; 
+    tmp.node_id = last_id; 
+    tmp.position = new_node_position; 
+    tmp.connected_node = connect; 
+    insert(node_graph, last_id, tmp); 
+    Serial.println("New node added!"); 
+}
+
+void update_node( struct HashTable* ht, int key, std::vector<std::vector<int>> new_connect )
+{
+    int hashValue = hashFunction(key); 
+
+    struct HashEntry* current = ht->table[hashValue];
+    while (current != NULL) 
+    {
+        if (current->key == key) 
+        {
+            (current->value).connected_node = new_connect; 
+            Serial.println("Node updated!"); 
+            break; 
+        }
+        current = current->next;
+    }
+}
+```
+#### Data structure - process stack
+
+This is how the rover keeps track of the processes when using the depth-first algorithm. Whenever it meets a dead-end, it goes back and takes the top process on the stack, which would instruct it to check for paths between the last two nodes stored in the process stack. 
+
+```
+struct Process
+{
+    std::pair<int, int> node_id_pair; 
+    Process* last_process; 
+}; 
+
+Process* stack = new Process; 
+
+void add_process(std::pair<int, int> new_node_id_pair)
+{
+    Process* new_process = new Process; 
+    new_process->node_id_pair = new_node_id_pair; 
+    new_process->last_process = stack; 
+    stack = new_process; 
+    delete new_process; 
+}
+
+void finish_process()
+{
+    if (stack != NULL)
+    {
+        stack = stack->last_process; 
+    }
+    else 
+    {
+        currentState = finish; 
+    }
+}
+
+std::pair<int, int> get_process()
+{
+    return stack->node_id_pair; 
+}
+```
+
+---
+
+### May 31st (Wed)
+
+<mark style="background-color: #7099a7;"> Finished the data structure code (mostly). </mark>
+
+<mark style="background-color: #7099a7;"> We are having an interim presentation tomorrow (20% of this project's mark, 15 mins of presentation, 5 mins Q&A), so i wrote smth for the PPT (also had a rehearsal with teammates). </mark>
+
+#### Interim Presentation
+
+I'm just putting some screenshots from the PPT. I used animation but they wont show. 
+
+![data processing diagram](https://github.com/thisisamor/blog_pic/blob/main/year2/EE-Project/data_processing_diagram.jpg?raw=true)
+
+![basic algorithm](https://github.com/thisisamor/blog_pic/blob/main/year2/EE-Project/basic_algorithm.jpg?raw=true)
+
+
+![data structure](https://github.com/thisisamor/blog_pic/blob/main/year2/EE-Project/data_structure.jpg?raw=true)
+
+![state machine](https://github.com/thisisamor/blog_pic/blob/main/year2/EE-Project/state_machine.jpg?raw=true)
+
+![optimisation](https://github.com/thisisamor/blog_pic/blob/main/year2/EE-Project/optimisation_methods.jpg?raw=true)
+
+#### FPGA algorithm
+
+This part shows how we do the image processing on the FPGA side. It is how we technically realised our maze exploring. (Also, it explaines WHY we were using such an approach to do the wall detection. )
+
+![wall detection](https://github.com/thisisamor/blog_pic/blob/main/year2/EE-Project/wall_detection.jpg?raw=true)
+
+![wall detection algorithm](https://github.com/thisisamor/blog_pic/blob/main/year2/EE-Project/wall_detection_algorithm.jpg?raw=true)
+
+![beacon detection](https://github.com/thisisamor/blog_pic/blob/main/year2/EE-Project/beacon_detection_algorithm.jpg?raw=true)
+
+The VGA display used here is just a way to highlight the pixels with different flags so that when debugging with image synchronously showing on the computer, we humans know what the FPGA is "looking at". 
+
+![VGA display](https://github.com/thisisamor/blog_pic/blob/main/year2/EE-Project/VGA_display.jpg?raw=true)
+
+#### Server communication 
+
+A very simple diagram showing how the communication system with server would be like. Also, since the front end plots the maze with rover position only, the json payload would only have 2 keys (x and y coordinates). And once the rover finishes exploring the maze (ie: the process stack is empty), it would enter a state called "finished", and send the final node graph to the server. (The server would then use dijkstra algorithm to find the best route and plot it on the website. ) I couldnt convince Jessica to write a fixed window size reliable data transport system though. 
+
+![server system](https://github.com/thisisamor/blog_pic/blob/main/year2/EE-Project/server_communication.jpg?raw=true)
+
+<small style="opacity: 0.7;"> life is so difficult, I cried twice today. </small>
+
+---
+
+### Jun 1st (Thur)
+
+<mark style="background-color: #7099a7;"> The presentation was ok. </mark>
+
+<mark style="background-color: #7099a7;"> Finally the motor driver arrived today. It worked fine. NiMH batteries are still not available. Currently we are using the power supply (idk its name, but it's huge, used for EEE2 experiments i think). </mark>
+
+<mark style="background-color: #7099a7;"> Wrote code for the optimisation algorithm, I hope we can test the whole procedure with the motors soon. </mark>
+
+<mark style="background-color: #7099a7;"> Wrote and tested UART communication between ESP32 and FPGA. </mark>
+
+#### Optimisation 
+
+The following code is used in scenarios as mentioned before in the PPT. 
+
+```
+std::vector<int> delete_connect( std::vector<std::vector<int>> &connect, int delete_id )
+{
+    std::vector<int> tmp; 
+    for ( int i=0; i<connect.size(); i++ )
+    {
+        if ( (connect[i])[0] == delete_id)
+        {
+            tmp = (connect[i]); 
+            for ( int j=i; j<connect.size()-1; j++ )
+            {
+                connect[j] = connect[j+1]; 
+            }
+            connect.pop_back(); 
+            return tmp; 
+        }
+    }
+    // should not happen
+    return tmp; 
+    Serial.println("Wrong: delete connection failed!"); 
+}
+
+void insert_new_node( struct HashTable* ht, int node1_id, int node2_id, int new_node_id )
+{
+    std::vector<int> node1_migrate; 
+    std::vector<int> node2_migrate; 
+
+    // modify node1 connect
+    int hashValue = hashFunction(node1_id); 
+    struct HashEntry* current = ht->table[hashValue];
+    while (current != NULL) 
+    {
+        if (current->key == hashValue) 
+        {
+            node1_migrate = delete_connect((current->value).connected_node, node2_id); 
+            break; 
+        }
+        current = current->next;
+    }
+    // modify node2 connect
+    hashValue = hashFunction(node2_id); 
+    current = ht->table[hashValue];
+    while (current != NULL) 
+    {
+        if (current->key == hashValue) 
+        {
+            node2_migrate = delete_connect((current->value).connected_node, node1_id); 
+            break; 
+        }
+        current = current->next;
+    }
+    // add node 1 and node 2 connection into new_node
+    hashValue = hashFunction(new_node_id); 
+    current = ht->table[hashValue];
+    while (current != NULL) 
+    {
+        if (current->key == hashValue) 
+        {
+            ((current->value).connected_node).push_back(node1_migrate); 
+            ((current->value).connected_node).push_back(node2_migrate); 
+            break; 
+        }
+        current = current->next;
+    }
+    
+    Serial.println("Node inserted between " + String(node1_id) + " and " + String(node2_id) + "!"); 
+}
+
+void add_node_at_current_position()
+{
+    std::vector<std::vector<int>> tmp; 
+    add_node(current_position, tmp); 
+    Serial.println("New node added at current position."); 
+}
+
+void check_node_at_new_node()
+{
+    struct HashEntry* first = node_graph->table[0];
+    while (first != NULL)    // TODO: (not necessary?) optimise this algorithm 
+    {
+        struct HashEntry* second = node_graph->table[0];
+        while (second != NULL) 
+        {
+            // TODO: double check the parameters! 
+            if (check_intersection((first->value).position, (second->value).position, (get_node(node_graph, last_id)).position, (get_node(node_graph, last_id-1)).position))
+            {
+                std::pair<int, int> new_node_position = intersection_calculation((first->value).position, (second->value).position, (get_node(node_graph, last_id)).position, (get_node(node_graph, last_id-1)).position); 
+                std::vector<std::vector<int>> tmp; 
+                add_node(new_node_position, tmp); 
+                insert_new_node(node_graph, (first->value).node_id, (second->value).node_id, last_id); 
+                Serial.println("New node added at (" + String(new_node_position.first) + ", " + String(new_node_position.second) + " )."); 
+            }
+            second = second->next; 
+        }
+        first = first->next;
+    }
+}
+```
+
+#### UART communication 
+
+This would enable ESP32 to read 32 bits messages from FPGA (rather than digital read from pin which is only 1 bit). The 7 pins currently reserved for FPGA could be reduced to only 2 pins. 
+
+Set up two serials (one for monitor output, one for UART communication): 
+
+```
+  pinMode(UART_RXD, INPUT); 
+  pinMode(UART_TXD, OUTPUT); 
+  Serial.begin(115200);
+  Serial2.begin(115200, SERIAL_8N1, UART_RXD, UART_TXD); 
+```
+
+Read and print in serial monitor: 
+```
+String UART_read_FPGA()
+{
+    if (Serial2.available() > 0) 
+    {
+        // read the incoming bytes:
+        Serial.println(Serial2.read());
+        return String(Serial2.read()); 
+    }
+    else 
+    {
+        Serial.println("UART not available.");
+    }   
+}
+```
+
+With the help of UART, more complexed image processing might be possible. 
+
+<small style="opacity: 0.7;"> idk, it's still so difficult. </small>
+
+<small style="opacity: 0.7;"> i heard that one group was using UART to send the full image to ESP32, who post it to the server. the server then process it using open cv, and send command back to the rover. but the time delay was quite long. </small>
+
+---
+
+### Jun 2nd (Fri)
+
+<mark style="background-color: #7099a7;"> Tested stepper motor control code. </mark>
+
+<mark style="background-color: #7099a7;"> Discussed what data would be sent bia UART for most efficient image processing. (we might build a very simple instruction set for that purpose) However the actual scenarios would be so complicated, i dont see that realised very soon. </mark>
+
+<mark style="background-color: #7099a7;"> Redesigned chasis for a vertically balanced rover (a higher centre of mass would shorten the distance to be moved by the rover to dynamically balance) and planned the part where provides ajustable angle and height of the camera implementation. </mark>
+
+<mark style="background-color: #7099a7;"> Discussed Nicholas's work on MCU6050 gyroscope and accelerometer, planned on design of controller for balnacing. </mark>
+
+#### Stepper motor control
+
+A step of 2 seconds high and 2 seconds low would result in 1.8 degree of motor move. The current design would allow 200 steps per motor revolution. 
+
+```
+void motor_control(int STPL, int STPR, int DIRL, int DIRR, int n) 
+{
+  digitalWrite(DIRL, LOW);
+  digitalWrite(DIRR, HIGH);
+
+  for(int i=0; i<200*n; i++)
+  {
+    digitalWrite(STPL, HIGH);
+    digitalWrite(STPR, HIGH);
+    delayMicroseconds(2000);
+    digitalWrite(STPL, LOW);
+    digitalWrite(STPR, LOW);
+    delayMicroseconds(2000);
+  }
+}
+```
+
+#### MCU6050 data processing 
+
+The MCU6050 module has built-in gyroscope and accelerometer, which would give reading in three different axis (x, y, z, left-hand rules tho). 
+
+```
+MPU_6050::MPU_6050(float aCompFilterParam, Cartesian aAccAngles, Cartesian aGryoAngles, Cartesian aFilteredAngles, Cartesian aGyroCalValues, Cartesian aGyroAngleVelCal){
+  mpu = Adafruit_MPU6050();
+  accAngles = aAccAngles;
+  gyroAngles = aGryoAngles;
+  filteredAngles = aFilteredAngles;
+  gyroCalValues = aGyroCalValues;
+  gyroAngVelCal = aGyroAngleVelCal;
+  compFilterParam = aCompFilterParam;
+  previousTime = 0.0;
+  currentTime = 0.0;
+}
+
+MPU_6050::MPU_6050(const MPU_6050& anMPU){
+  *this = anMPU;
+}
+
+MPU_6050::~MPU_6050(){}
+
+MPU_6050& MPU_6050::operator=(const MPU_6050& anMPU){
+  mpu = Adafruit_MPU6050(anMPU.mpu);    // Calling the Adafruit_MPU6050 copy constructor.
+  a = anMPU.a;
+  g = anMPU.g;
+  temp = anMPU.temp;
+  accAngles = anMPU.accAngles;
+  gyroAngles = anMPU.gyroAngles;
+  filteredAngles = anMPU.filteredAngles;
+  gyroCalValues = anMPU.gyroCalValues;
+  gyroAngVelCal = anMPU.gyroAngVelCal;
+  compFilterParam = anMPU.compFilterParam;
+  previousTime = anMPU.previousTime;
+  currentTime = anMPU.currentTime;
+  return *this;
+}
+
+
+// Activates and configures the MPU 6050. Returns "false" if failed, otherwise "true".
+// NOTE: Remember that inside member methods of a class, "this->" is implied when referencing other class members.
+bool MPU_6050::activate() {
+  // Activating the MPU 6050. 
+  if (!mpu.begin()) {
+    Serial.println("Failed to find MPU6050 chip.");
+    return false;
+  }
+  Serial.println("MPU6050 Found.");
+
+  // Configuring the accelerometer.
+  mpu.setAccelerometerRange(MPU6050_RANGE_4_G);
+
+  // Configuring the gyro.
+  mpu.setGyroRange(MPU6050_RANGE_500_DEG);
+  mpu.setFilterBandwidth(MPU6050_BAND_44_HZ);
+
+  return true;
+}
+
+// Calibrates the Gyroscope. Should be run when the MPU 6050 is in a stationary position.  Returns "false" if failed, otherwise "true".
+bool MPU_6050::gyro_calibrate(){
+  Serial.println("Calibrating gyro, place on level surface and do not move.");
+  gyroCalValues = Cartesian{0, 0, 0};   // Reset the gyro calibration values to 0.
+
+  // Take 3000 readings for each coordinate.
+  for (int cal_int = 0; cal_int < 3000; cal_int ++){
+    if(cal_int % 200 == 0) Serial.print(".");
+    mpu.getEvent(&a, &g, &temp);     // Get new sensor event values without updating data members.
+    gyroCalValues.x += g.gyro.x;
+    gyroCalValues.y += g.gyro.y;
+    gyroCalValues.z += g.gyro.z;
+  }
+
+  // Average the values
+  gyroCalValues.x /= 3000;
+  gyroCalValues.y /= 3000;
+  gyroCalValues.z /= 3000;
+
+  // The MPU should start running right after calibration, meaning that we now set our initial "currentTime".
+  currentTime = micros();
+
+  return true;
+}
+
+// Measures sensor event values and updates relevant data members. Returns "false" if failed, otherwise "true".
+bool MPU_6050::readSensor(){
+  mpu.getEvent(&a, &g, &temp);     // Get new sensor event values.
+  updateData();
+  return true;
+}
+
+// Updates relevant data members in the class with new values read from the sensor. Returns "false" if failed, otherwise "true".
+bool MPU_6050::updateData(){
+  // Updating time variables.
+  previousTime = currentTime;
+  currentTime = micros();    // micros() returns the time in microseconds since the current program started running.
+
+  // Updating calibrated angular velocity values.
+  gyroAngVelCal = calcAngVelCal();
+
+  // Updating the accelerometer calculated angle values.
+  accAngles = calcAccAngles();
+
+  // Updating the gyroscope calculated angle values.
+  gyroAngles = calcGyroAngles();
+
+  // Updating the Complementary Filter calculated angle values.
+  filteredAngles = calcFilteredAngles();
+
+  return true;
+}
+
+// Calculates the Calibrated Gyroscope Angular Velocity values.
+Cartesian MPU_6050::calcAngVelCal(){
+  Cartesian adjustedGyro;
+  // Define new gyroscope angular velocities in degrees/s with the calibration offset values subtracted.
+  adjustedGyro.x = (g.gyro.x - gyroCalValues.x)*RAD_TO_DEG;
+  adjustedGyro.y = (g.gyro.y - gyroCalValues.y)*RAD_TO_DEG;
+  adjustedGyro.z = (g.gyro.z - gyroCalValues.z)*RAD_TO_DEG;
+
+  return adjustedGyro;
+}
+
+// Calculates the orientation of the MPU 6050 using only accelerometer data.
+Cartesian MPU_6050::calcAccAngles(){
+  Cartesian angles;
+  angles.x = getAccRoll(a);    // Roll is the rotation about the x-axis.
+  angles.y = getAccPitch(a);   // Pitch is the rotation about the y-axis.
+  angles.z = getAccYaw(a);     // Yaw is the rotation about the z-axis.
+  return angles;
+}
+
+// Calculates the orientation of the MPU 6050 using only gyroscope data.
+Cartesian MPU_6050::calcGyroAngles(){
+  Cartesian angles = gyroAngles;    // Initialize with the current gyro estimated angles.
+  float dt;
+  Cartesian adjustedGyroVel = calcAngVelCal();
+
+  // Calculating the change in time elapsed since the last measurement in seconds. This change in time is used for the integration approximation.
+  dt = (currentTime - previousTime)/1000000.0;
+
+  // Gyroscope estimated angle values. These are integrals over time and will tend to drift.
+  angles.x += adjustedGyroVel.x*dt;     
+  angles.y += adjustedGyroVel.y*dt;
+  angles.z += adjustedGyroVel.z*dt;
+
+  // Changing angles to be within -180 and 180 degrees.
+  angles.x = normalizeAngle(angles.x);
+  angles.y = normalizeAngle(angles.y);
+  angles.z = normalizeAngle(angles.z);
+
+  return angles;
+}
+
+// Calculates the orientation of the MPU 6050 using accelerometer and gyroscope data with a Complementary Filter.
+Cartesian MPU_6050::calcFilteredAngles(){
+  Cartesian angles;
+  float dt;
+  Cartesian adjustedGyroVel = calcAngVelCal();
+  Cartesian accelAngles = calcAccAngles();
+
+  // Calculating the change in time elapsed since the last measurement in seconds. This change in time is used for the integration approximation.
+  dt = (currentTime - previousTime)/1000000.0;
+
+  // Complementary filter. (NOTE: A complementary filter is a computationally inexpensive sensor fusion technique that consists of a low-pass and a high-pass filter).
+  // In this case the low-pass and high-pass filter are modeled as scalar multiplications to different terms.
+  // This way we can combine the gyro and accelerometer measurements to get more accurate pitch, roll, and yaw values.
+  angles.x = (compFilterParam)*(filteredAngles.x + adjustedGyroVel.x*dt) + (1-compFilterParam)*(accelAngles.x);   // The first term in this equation represents the previous filtered angle plus the integral of angular velocity from the gyro. The second term is the estimated accelerometer angle.
+  angles.y = (compFilterParam)*(filteredAngles.y + adjustedGyroVel.y*dt) + (1-compFilterParam)*(accelAngles.y);
+  angles.z = (compFilterParam)*(filteredAngles.z + adjustedGyroVel.z*dt) + (1-compFilterParam)*(accelAngles.z);
+
+  return angles;
+}
+```
+
+For usage in main function, the following class is used so every time `mpu6050.readSensor();` is called, it updates all readings for controller to use. 
+
+```
+class MPU_6050{
+public:
+    // Default constructor (Remember that you do not need a default argument for every data member in a class. Additionally, when using the default constructor, variables with default arguments can be omitted as parameters and their default value will be assumed.)
+    // It is also important to note that if you want to initialize the object with different values for certain default arguments, you need to enter a value for each default argument preceding the one you want to specify in the constructor input parameters. Hence, put the variables you are most likely to specify at the beginning of you input parameters.
+    MPU_6050(float aCompFilterParam = 0.98, Cartesian aAccAngles=Cartesian{0, 0, 0}, Cartesian aGryoAngles=Cartesian{0, 0, 0},
+            Cartesian aFilteredAngles=Cartesian{0, 0, 0},  Cartesian aGyroCalValues=Cartesian{0, 0, 0},
+            Cartesian aGyroAngleVelCal=Cartesian{0, 0, 0});
+    MPU_6050(const MPU_6050& anMPU);        // Copy constructor
+    ~MPU_6050();        // Destructor
+
+    MPU_6050& operator=(const MPU_6050& anMPU);     // Assignment operator
+
+    // Methods
+    bool activate();
+    bool gyro_calibrate();
+    bool readSensor();
+    bool updateData();
+    Cartesian calcAngVelCal();
+    Cartesian calcAccAngles();
+    Cartesian calcGyroAngles();
+    Cartesian calcFilteredAngles();
+
+    // Data Members
+    Adafruit_MPU6050 mpu;       // Adafruit MPU 6050 object.
+    sensors_event_t a, g, temp;     // Accelerometer, gyroscope, and temperature sensor last measured sensor event values.
+    Cartesian accAngles;       // Accelerometer calculated angle values.
+    Cartesian gyroAngles;      // Gyroscope calculated angle values.
+    Cartesian filteredAngles;  // Calculated angle values after the Complementary Filter.
+    Cartesian gyroCalValues;   // Stores the x, y, and z gyro calibration values.
+    Cartesian gyroAngVelCal;   // Stores the calibrated angular velocity values in degrees/s.
+    float compFilterParam;          // Parameter that defines the LPF and HPF for the angle calculation Complementary Filter.
+    unsigned long previousTime;     // Stores the previous time when a sensor event was read. Used for integration calculations.
+    unsigned long currentTime;      // Stores the current time when a sensor event was read. Used for itegration calculations.
+};
+```
+
+#### Chasis and balance
+
+The major concern is that, the camera requires a rather critical angle between itself and ground to read pixels from the correct threshold region (and also the height from the ground matters for the beacons). 
+
+However, the balancing system could only dynamically try to stay in that balnaced state (by constantly, slightly, moving forward and backward) and not collide, obviously. 
+
+These two kinda conflict and we would have to find a trade-off in between. We may even have to add some command to judge whether or not the current position is "a state where the camera detection result is usable". 
+
+---
+
+This weekend: 
+
+- [ ] Read doc on controller modelling
+- [ ] try? designing a simple controller model, settling time very important!!!
+- [ ] How to put the controller and motor function together? 
+
+- [ ] (optional) is there a way to model all scenarios that might be captured by camera at sometime throughout demo? 
+   - [ ] calculate angle from camera image? 
+   - [ ] detection of path from camera image? 
