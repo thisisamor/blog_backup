@@ -1,11 +1,11 @@
 ---
-title: EE Project Work Diary
+title: EE Project Work Diary (pt1)
 date: 2023-05-26 19:14:13
 categories: Project
 tags:
   - college
   - project
-description: My day-to-day work diary of my college project. 
+description: My day-to-day work diary of my college project. Part 1 (Week 0 - Week 2)
 ---
 <p style="opacity: 0.7;">Start Notes: 
 
@@ -1148,9 +1148,9 @@ These two kinda conflict and we would have to find a trade-off in between. We ma
 
 This weekend: 
 
-- [ ] Read doc on controller modelling
+- [x] Read doc on controller modelling
 - [ ] try? designing a simple controller model, settling time very important!!!
-- [ ] How to put the controller and motor function together? 
+- [x] How to put the controller and motor function together? 
 
 - [ ] (optional) is there a way to model all scenarios that might be captured by camera at sometime throughout demo? 
    - [ ] calculate angle from camera image? 
