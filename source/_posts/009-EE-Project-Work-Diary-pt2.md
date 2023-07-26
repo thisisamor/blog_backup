@@ -1,5 +1,5 @@
 ---
-title: 009-EE-Project-Work-Diary (pt2)
+title: EE Project Work Diary (pt2)
 date: 2023-06-18 10:40:56
 categories: Project
 tags:
