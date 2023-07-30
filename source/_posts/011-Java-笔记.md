@@ -1,10 +1,10 @@
 ---
-title: Java Notes
+title: Java 笔记
 date: 2023-07-16 10:20:17
 categories: Intern
 tags:
   - intern
-description: 
+description: 试图入门。
 ---
 <p style="opacity: 0.7;">Start Notes: 
 
