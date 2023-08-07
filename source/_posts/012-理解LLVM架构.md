@@ -208,3 +208,25 @@ assembly -> executable
 llc ir1.ll -o ir1.s
 clang++ ir1.s -o executable
 ```
+
+
+
+### DIBuilder
+
+create file for compiler file
+
+set scope when new function declared
+
+track source position, emit location
+
+### 
+
+适用于 Linux 的 Windows 子系统实例已终止。
+Press any key to continue...
+
+管理员身份运行: 
+
+```
+PS C:\Users\amor_> net stop LxssManager
+PS C:\Users\amor_> net start LxssManager
+```

@@ -6,9 +6,9 @@ tags:
   - intern
 description: 试图入门。
 ---
-<p style="opacity: 0.7;">Start Notes: 
+<!-- <p style="opacity: 0.7;">Start Notes: 
 
-<small style="opacity: 0.7;"> </small>
+<small style="opacity: 0.7;"> </small> -->
 
 ---
 
