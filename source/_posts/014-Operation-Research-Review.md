@@ -1,5 +1,5 @@
 ---
-title: 014-Operation-Research-Review
+title: Operation Research Review
 date: 2023-10-27 14:12:48
 tags:
   - college
