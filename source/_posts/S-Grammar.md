@@ -9,6 +9,17 @@ description: Verb tenses in Spanish.
 ---
 
 
+<p style="opacity: 0.7;">Start Notes: 
+
+<small style="opacity: 0.7;">
+
+[lingolia](https://www.lingolia.com/en/)
+
+</small>
+
+---
+
+
 ## Present Simple Tense
 
 | Pronombre Personal | -ar | (hablar) | -er | (comer) | -ir | (vivir) |

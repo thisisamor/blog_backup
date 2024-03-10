@@ -209,7 +209,7 @@ Base case
 Induction case
 
 
-<!-- ## 7. Sequential Design and Pipelining
+## 7. Sequential Design and Pipelining
 
 
 ## 8. Pipelining: Clustering and Slowdown
@@ -218,8 +218,14 @@ Induction case
 ## 9. Homomorphism and Bit-level Pipelining
 
 
-## 10. State Machines and beyond -->
+## 10. State Machines and beyond
 
 
+
+
+## 11. 
+
+
+## 12. 
 
 
